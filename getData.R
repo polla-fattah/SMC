@@ -1,4 +1,6 @@
 library('BatchGetSymbols')
+#TODO: Harvest Date
+#TODO: normalise and transpose datasets
 
 norm <- function(x) as.integer((x - min(x)) / (max(x) - min(x)) * 1000)
 

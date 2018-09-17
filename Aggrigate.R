@@ -10,8 +10,8 @@
 # data which you want to add new aggregative attributes to it then it will run 
 # 'addColumns' function which it should call all necessary functions.
 
-# TODO: give more comments:
-# Later: put examples as show cases
+#TODO: give more comments:
+#LATER: put examples as show cases
 
 #==== override this function to add columes this will be called by main function ====
 addColumns <- function(){

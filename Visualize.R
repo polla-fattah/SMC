@@ -1,5 +1,5 @@
-# TODO: Get rid of unused commented methods
-# TODO Better commenting
+#TODO: Get rid of unused commented methods
+#TODO: Better commenting
 # 
 
 #boxplots for Temporal Atributes Acording to Classes

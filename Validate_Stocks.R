@@ -1,4 +1,7 @@
 library(pROC)
+
+#TODO: What was that
+
 # Train Test method
 trainTest <- function(testIndex, allData, itermax=15, trace = T, costFun=completeDist){
   result <- list()

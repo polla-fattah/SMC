@@ -1,5 +1,5 @@
 
-# TODO: Better commenting of the Bruteforece methed
+#TODO: Better commenting of the Bruteforece methed
 
 ######### bruteforsing #######
 findBestRule <- function(fn, lower, upper, ...){

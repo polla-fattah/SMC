@@ -1,5 +1,5 @@
 library(dtw)
-
+#TODO: Compare Between clustering and classification
 source('Aggrigate.R')
 transpos <- function (DATA_FRAME) {
 	result <<- data.frame()
