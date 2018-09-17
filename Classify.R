@@ -1,6 +1,6 @@
 conditionalFUNs <- c()
 classNames <- c()
-
+# TODO: Optimise the method of classification if possible and give more comments
 
 registerNewClass <- function(name, conditionFUN){
 	conditionalFUNs <<- c(conditionalFUNs, conditionFUN)

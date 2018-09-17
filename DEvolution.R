@@ -1,4 +1,9 @@
+
 library("DEoptim")
+
+# TODO: Use other optimisation methods other than DE
+# LATER: Compare between these optimisation methos
+
 fnm <- function(x) {round(x,0)}
 #fnm <- function(x, Len) matrix(round(x, 2), nrow=10*Len, ncol=Len,byrow=TRUE)
 

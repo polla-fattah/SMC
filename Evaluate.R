@@ -2,6 +2,9 @@
 library('clv')
 library('mcclust')
 
+# FIXME: Change the namings of the file and methods
+# TODO: Give more comments
+
 # External clustering validity measures function with single function call
 Rand <- function(clust1, clust2) clv.Rand(std.ext(clust1, clust2))
 Jaccard <- function(clust1, clust2) clv.Jaccard(std.ext(clust1, clust2))
