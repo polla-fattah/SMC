@@ -1,9 +1,32 @@
 {
-  "exclude": [
-    "^(node_modules|bower_components|\\.imdone|target|build|dist|logs|flow-typed|imdone-export.json)[\\/\\\\]?|\\.(git|svn|hg|npmignore)|\\~$|\\.(jpg|png|gif|swp|ttf|otf)$"
+  "noHelp": true,
+  "sync": {
+    "useImdoneioForPriority": true,
+    "name": "pollaeng/SMC",
+    "id": "5b9f7b7dfc21d40d062a4588"
+  },
+  "marked": {
+    "langPrefix": "language-",
+    "smartLists": true,
+    "pedantic": false,
+    "breaks": false,
+    "tables": true,
+    "gfm": true
+  },
+  "lists": [
+    {
+      "hidden": false,
+      "name": "HELP"
+    },
+    {
+      "name": "DONE",
+      "hidden": false
+    },
+    {
+      "name": "TODO",
+      "hidden": false
+    }
   ],
-  "watcher": true,
-  "keepEmptyPriority": true,
   "code": {
     "include_lists": [
       "TODO",
@@ -23,28 +46,9 @@
       "HELP"
     ]
   },
-  "lists": [
-    {
-      "name": "HELP",
-      "hidden": false
-    },
-    {
-      "hidden": false,
-      "name": "DONE"
-    }
-  ],
-  "marked": {
-    "gfm": true,
-    "tables": true,
-    "breaks": false,
-    "pedantic": false,
-    "smartLists": true,
-    "langPrefix": "language-"
-  },
-  "sync": {
-    "id": "5b9f7b7dfc21d40d062a4588",
-    "name": "pollaeng/SMC",
-    "useImdoneioForPriority": true
-  },
-  "noHelp": true
+  "keepEmptyPriority": true,
+  "watcher": true,
+  "exclude": [
+    "^(node_modules|bower_components|\\.imdone|target|build|dist|logs|flow-typed|imdone-export.json)[\\/\\\\]?|\\.(git|svn|hg|npmignore)|\\~$|\\.(jpg|png|gif|swp|ttf|otf)$"
+  ]
 }
