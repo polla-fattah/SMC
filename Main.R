@@ -7,8 +7,8 @@ source('DEvolution.R')
 source('Visualize.R')
 source('Validate_Stocks.R')
 
-# TODO: Figure out the best periods of time to be classified
-# TODO: Aggrigate the results of the periods (mean)
+#TODO: Figure out the best periods of time to be classified
+#TODO: Aggrigate the results of the periods (mean)
 # 
 
 ##### Environment Variables #####
@@ -107,7 +107,7 @@ main <- function(){
 	
 	setVariables(4)
 	registerClasses()
-	# FIXME the path shoud Change
+	#FIXME the path shoud Change
 	allData <<- read.csv('../Data/SP500 1-2015 to 7-2015 Normilized.csv')
 	dataSplit <- 63
 	
