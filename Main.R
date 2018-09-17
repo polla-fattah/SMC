@@ -111,7 +111,7 @@ main <- function(){
 	
 	setVariables(4)
 	registerClasses()
-	#FIXME: the path shoud Change
+
 	allData <<- read.csv('../Data/SP500 1-2015 to 7-2015 Normilized.csv')
 	dataSplit <- 63
 	
