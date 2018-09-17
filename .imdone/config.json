@@ -1,22 +1,22 @@
 {
   "noHelp": true,
   "sync": {
-    "useImdoneioForPriority": true,
+    "id": "5b9f7b7dfc21d40d062a4588",
     "name": "pollaeng/SMC",
-    "id": "5b9f7b7dfc21d40d062a4588"
+    "useImdoneioForPriority": true
   },
   "marked": {
-    "langPrefix": "language-",
-    "smartLists": true,
-    "pedantic": false,
-    "breaks": false,
+    "gfm": true,
     "tables": true,
-    "gfm": true
+    "breaks": false,
+    "pedantic": false,
+    "smartLists": true,
+    "langPrefix": "language-"
   },
   "lists": [
     {
-      "hidden": false,
-      "name": "HELP"
+      "name": "HELP",
+      "hidden": false
     },
     {
       "name": "DONE",
@@ -28,6 +28,10 @@
     },
     {
       "name": "FIXME",
+      "hidden": false
+    },
+    {
+      "name": "LATER",
       "hidden": false
     }
   ],
