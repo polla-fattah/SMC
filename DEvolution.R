@@ -1,8 +1,16 @@
 
 library("DEoptim")
 
-#TODO: Use other optimisation methods other than DE
-#LATER: Compare between these optimisation methos
+#TODO: Use other optimisation methods other than DE id:18
+ ----
+ <https://github.com/pollaeng/SMC/issues/16>
+ Polla A. Fattah
+ pollaeng@gmail.com
+#LATER: Compare between these optimisation methos id:9
+ ----
+ <https://github.com/pollaeng/SMC/issues/7>
+ Polla A. Fattah
+ pollaeng@gmail.com
 
 fnm <- function(x) {round(x,0)}
 #fnm <- function(x, Len) matrix(round(x, 2), nrow=10*Len, ncol=Len,byrow=TRUE)

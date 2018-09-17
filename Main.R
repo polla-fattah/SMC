@@ -111,11 +111,15 @@ main <- function(){
 	
 	setVariables(4)
 	registerClasses()
-	#FIXME: the path shoud Change
-	allData <<- read.csv('../Data/SP500 1-2015 to 7-2015 Normilized.csv')
-	dataSplit <- 63
-	
-	testIndex <- which(allData$Date > dataSplit)
+	#FIXME: the path shoud Change id:12
+ 	allData <<- read.csv('../Data/SP500 1-2015 to 7-2015 Normilized.csv')
+ 	dataSplit <- 63
+ 	
+ 	testIndex <- which(allData$Date > dataSplit)
+ ----
+ <https://github.com/pollaeng/SMC/issues/10>
+ Polla A. Fattah
+ pollaeng@gmail.com
 
 	ttr.centroidDistStock <<- trainTest(testIndex, allData, costFun=centroidDist)
 	dput(ttr.centroidDistStock, file = 'SavedResults/ttr.centroidDistStock.txt')

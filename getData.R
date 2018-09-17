@@ -1,6 +1,14 @@
 library('BatchGetSymbols')
-#TODO: Harvest Date
-#TODO: normalise and transpose datasets
+#TODO: Harvest Date id:10
+ ----
+ <https://github.com/pollaeng/SMC/issues/8>
+ Polla A. Fattah
+ pollaeng@gmail.com
+#TODO: normalise and transpose datasets id:13
+ ----
+ <https://github.com/pollaeng/SMC/issues/11>
+ Polla A. Fattah
+ pollaeng@gmail.com
 
 norm <- function(x) as.integer((x - min(x)) / (max(x) - min(x)) * 1000)
 

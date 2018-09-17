@@ -1,5 +1,9 @@
 
-#TODO: Better commenting of the Bruteforece methed
+#TODO: Better commenting of the Bruteforece methed id:16
+ ----
+ <https://github.com/pollaeng/SMC/issues/14>
+ Polla A. Fattah
+ pollaeng@gmail.com
 
 ######### bruteforsing #######
 findBestRule <- function(fn, lower, upper, ...){

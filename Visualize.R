@@ -1,6 +1,14 @@
-#TODO: Get rid of unused commented methods
-#TODO: Better commenting
-# 
+#TODO: Get rid of unused commented methods id:15
+ ----
+ <https://github.com/pollaeng/SMC/issues/13>
+ Polla A. Fattah
+ pollaeng@gmail.com
+#TODO: Better commenting id:19
+ # 
+ ----
+ <https://github.com/pollaeng/SMC/issues/17>
+ Polla A. Fattah
+ pollaeng@gmail.com
 
 #boxplots for Temporal Atributes Acording to Classes
 plotTAAC <- function(classes, className='class', row=2, col=2){
