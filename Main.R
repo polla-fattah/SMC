@@ -7,9 +7,13 @@ source('DEvolution.R')
 source('Visualize.R')
 source('Validate_Stocks.R')
 
-#TODO: Figure out the best periods of time to be classified
-#TODO: Aggrigate the results of the periods (mean)
-# 
+#TODO: Figure out the best periods of time to be classified id:7
+ ----
+ <https://github.com/pollaeng/SMC/issues/4>
+#TODO: Aggrigate the results of the periods (mean) id:6
+ # 
+ ----
+ <https://github.com/pollaeng/SMC/issues/3>
 
 ##### Environment Variables #####
 setVariables <- function(tp=4){
