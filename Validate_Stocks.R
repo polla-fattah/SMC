@@ -1,6 +1,10 @@
 library(pROC)
 
-#TODO: What was that
+#TODO: What was that id:17
+ ----
+ <https://github.com/pollaeng/SMC/issues/15>
+ Polla A. Fattah
+ pollaeng@gmail.com
 
 # Train Test method
 trainTest <- function(testIndex, allData, itermax=15, trace = T, costFun=completeDist){

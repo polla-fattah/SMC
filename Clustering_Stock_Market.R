@@ -1,17 +1,21 @@
 library(dtw)
-#TODO: Compare Between clustering and classification
-source('Aggrigate.R')
-transpos <- function (DATA_FRAME) {
-	result <<- data.frame()
-	
-	for( s in unique(DATA_FRAME$Symbol)){
-		result <<- rbind(result, t(DATA_FRAME$ClosedPercent[which(DATA_FRAME$Symbol == s)]))
-		
-	}
-	
-	result <<- cbind(symbol=unique(DATA_FRAME$Symbol), result)
-	return (result)
-}
+#TODO: Compare Between clustering and classification id:14
+ source('Aggrigate.R')
+ transpos <- function (DATA_FRAME) {
+ 	result <<- data.frame()
+ 	
+ 	for( s in unique(DATA_FRAME$Symbol)){
+ 		result <<- rbind(result, t(DATA_FRAME$ClosedPercent[which(DATA_FRAME$Symbol == s)]))
+ 		
+ 	}
+ 	
+ 	result <<- cbind(symbol=unique(DATA_FRAME$Symbol), result)
+ 	return (result)
+ }
+ ----
+ <https://github.com/pollaeng/SMC/issues/12>
+ Polla A. Fattah
+ pollaeng@gmail.com
 
 
 ID_COL <<- 'Symbol'
