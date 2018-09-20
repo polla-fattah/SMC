@@ -8,19 +8,15 @@ source('Visualize.R')
 source('Validate_Stocks.R')
 
 #TODO: Figure out the best periods of time to be classified id:7
- ----
- <https://github.com/pollaeng/SMC/issues/4>
 #TODO: Aggrigate the results of the periods (mean) id:6
- # 
- ----
- <https://github.com/pollaeng/SMC/issues/3>
+
 
 ##### Environment Variables #####
 setVariables <- function(tp=4){
   TIME_POINT <<-tp
-  TIME_COL <<- 'Date'
-  ID_COL <<- 'Symbol'
-  TEMPORAL_ATTRIBUTES <<- c("Close") # , "HighPercent"
+  TIME_COL <<- 'date'
+  ID_COL <<- 'ticker'
+  TEMPORAL_ATTRIBUTES <<- c("price.close") # , "HighPercent"
 
 # For full data of 125 time points
   LOWER <<- c( 1100, 500, 1600, 650, 550)
@@ -59,7 +55,7 @@ addConsDiffColumn <- function(){
   for(id in ITEM_ID){
     ids <- DATA_FRAME[ID_COL] == id
 
-    temp <- DATA_FRAME[ids,]$Close
+    temp <- DATA_FRAME[ids,]$price.close
 
     v <- temp[-1] - temp[-length(temp)]
     
@@ -72,8 +68,8 @@ addConsDiffColumn <- function(){
 
 addColumns <- function(){
 
-  addAggrColumn(itemSD, 'ClosedPercentSD', 'Close', r = 3)
-  addAggrColumn(valDiffConsec, 'ClosedDiffSD', 'Close', r=3)
+  addAggrColumn(itemSD, 'ClosedPercentSD', 'price.close', r = 3)
+  addAggrColumn(valDiffConsec, 'ClosedDiffSD', 'price.close', r=3)
 }
 
 ####### Conditional functions for finding players ########
@@ -112,10 +108,10 @@ main <- function(){
 	setVariables(4)
 	registerClasses()
 
-	allData <<- read.csv('../Data/SP500 1-2015 to 7-2015 Normilized.csv')
+	allData <<- read.csv('data/normalized/2013-01-01 to 2013-07-01.csv')
 	dataSplit <- 63
 	
-	testIndex <- which(allData$Date > dataSplit)
+	testIndex <- which(allData$date > dataSplit)
 
 	ttr.centroidDistStock <<- trainTest(testIndex, allData, costFun=centroidDist)
 	dput(ttr.centroidDistStock, file = 'SavedResults/ttr.centroidDistStock.txt')
